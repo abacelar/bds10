@@ -74,7 +74,7 @@ const Form = () => {
                   className={`form-control base-input ${
                     errors.name ? 'is-invalid' : ''
                   }`}
-                  placeholder="Nome"
+                  placeholder="Nome do funcionário"
                   name="name"
                   data-testid="name"
                 />
@@ -96,8 +96,9 @@ const Form = () => {
                   className={`form-control base-input ${
                     errors.email ? 'is-invalid' : ''
                   }`}
-                  placeholder="Email"
+                  placeholder="Email do funcionário"
                   name="email"
+                  data-testid="email"
                 />
                 <div className="invalid-feedback d-block">
                   {errors.email?.message}
@@ -106,7 +107,7 @@ const Form = () => {
               </div>
 
               <div className="margin-bottom-30 ">
-                <label htmlFor="department" className="d-none">Departamentos</label>
+                <label htmlFor="department" className="d-none">Departamento</label>
                 <Controller
                   name="department"
                   rules={{ required: true }}

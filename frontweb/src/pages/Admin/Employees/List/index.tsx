@@ -36,7 +36,7 @@ const List = () => {
       withCredentials: true,
       params: {
         page: controlComponentsData.activePage,
-        size: 4,
+        size: 3,
       },
     };
 
